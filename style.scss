@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Barriecito&display=swap');
+
+@import "bourbon";
+
+html {
+  font-family: 'Barriecito', cursive;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+section {
+  @include align-items(center);
+  @include display(flex); 
+  @include justify-content(center);
+  @include linear-gradient(261deg, #ff7a8a, #ab72c0, #7db0f7, #f9c089, #7e5eff, #81ff7a, #ff7a8a);
+  animation: GradientSwipe 38s ease infinite;
+  -moz-animation: GradientSwipe 38s ease infinite;
+  -webkit-animation: GradientSwipe 38s ease infinite;
+  background-size: 1200% 1200%;
+  height: 100vh;
+  width: 100vw;
+  
+  @-webkit-keyframes GradientSwipe {
+    0%{background-position:0% 40%}
+    50%{background-position:100% 61%}
+    100%{background-position:0% 40%}
+  }
+  @-moz-keyframes GradientSwipe {
+    0%{background-position:0% 40%}
+    50%{background-position:100% 61%}
+    100%{background-position:0% 40%}
+  }
+  @keyframes GradientSwipe {
+    0%{background-position:0% 40%}
+    50%{background-position:100% 61%}
+    100%{background-position:0% 40%}
+  }
+}
+
+.comingsoon {
+  border: 2px solid white;
+  border-radius: 10px; 
+  padding: 20px;
+  
+  h1 {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+  }
+} 
+
+.icon-class {
+  text-decoration: none !important;
+  padding: 3px;
+  color: white;
+  font-size: 40px;
+}
